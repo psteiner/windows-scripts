@@ -1,0 +1,8 @@
+57a58
+> =begin
+65a67,71
+> 
+> =end
+> 
+>       which = Util::Platform.windows? ? "where ssh >NUL 2>&1" : "which ssh >/dev/null 2>&1"
+>       raise Errors::SSHUnavailable if !Kernel.system(which)
